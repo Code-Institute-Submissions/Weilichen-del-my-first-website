@@ -6,9 +6,12 @@ This is my portfolio page with detailed information such as my about us informat
 
 Installing - This project is being deployed using aws cloud 9 and also constanly updating and commiting to github for any ammendments made.
 
-Testing - This is being tested across ipad, mobile and desktop , so in a way it's mobile responsive.
+Testing - This is being tested with chrome , safari and internet edge. 
 
 Built with - Webframework : pure html with css styling
+
+Sources - http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
+          http://cdn.tutorialzine.com/misc/enhance/v2.js" async
 
 
 
