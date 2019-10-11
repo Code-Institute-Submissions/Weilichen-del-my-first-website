@@ -1,39 +1,221 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My First Project</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Tutorialzine's Awesome Parallax Website</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="styles/style.css" rel="stylesheet">
+
+
 </head>
+<header>
 
+
+        <div class="header-left">
+
+            <p class="menu">
+                <a href="#contact">Contact</a>
+                ·
+                <a href="#about-us">About Me</a>
+                ·
+                <a href="#intro">Intro</a>
+            </p>
+
+        </div>
+
+
+
+</header>
 <body>
-		<div class="banner">
-			<div class="title">
-				Testing
-			</div>
-		</div>
-		<div class="section">
-			<div class="content">
-				Testing 
-			</div>
-		</div>
-		<div class="last">
-		<div class="box">
-			<div class="box-1">
-				Testing 
-			</div>
-			<div class="box-2">
-				Testing 
-			</div>
-			<div class="box-3">
-				Testing 
-			</div>
-			</div>
-		</div>
-	</body>
 
-       
+
+
+
+<div
+        class="parallax-image-wrapper"
+        data-anchor-target="#page-intro"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)">
+
+    <div
+            class="parallax-image"
+            style="background-image:url(images/palmtrees.jpg)"
+            data-anchor-target="#page-intro"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+
+    </div>
+</div>
+<div
+        class="parallax-image-wrapper"
+        data-anchor-target=".body-text + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)">
+
+    <div
+            class="parallax-image"
+            style="background-image:url(images/aboutus.jpg)"
+            data-anchor-target=".body-text + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+
+    </div>
+</div>
+<div
+        class="parallax-image-wrapper"
+        data-anchor-target=".features-list + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)">
+
+    <div
+            class="parallax-image"
+            style="background-image:url(images/skills.jpg)"
+            data-anchor-target=".features-list + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+
+    </div>
+</div>
+<div
+        class="parallax-image-wrapper"
+        data-anchor-target=".about-us + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)">
+
+    <div
+            class="parallax-image"
+            style="background-image:url(images/contactus.jpg)"
+            data-anchor-target=".about-us + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+
+    </div>
+</div>
+
+<div id="skrollr-body">
+
+    <div id="page-intro" class="gap" style="background-image:url(images/intro.jpg); ">
+        <h1>Tutorialzine's Awesome Parallax Website</h1>
+        
+    </div>
+
+    <div id="intro" class="body-text content">
+
+        <h2>Body Text</h2>
+
+        <p data-300-center-top="transform: scale(0.8); opacity: 0" data-300-center-center="transform: scale(1); opacity: 1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
+        </p>
+
+
+        <p data-200-center-top="transform: scale(0.8); opacity: 0" data-200-center-center="transform: scale(1); opacity: 1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
+        </p>
+
+        <p data-100-center-top="transform: scale(0.8); opacity: 0" data-100-center-center="transform: scale(1); opacity: 1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
+        </p>
+
+    </div>
+
+
+    <div class="gap" style="background-image:url(images/aboutus.jpg); "></div>
+
+
+    <div id="about-us" class="about-us">
+
+        <h2>About Me</h2>
+
+        <div data-150-bottom-center="transform: rotate(-90deg); opacity: 0" data-150-center-center="transform: rotate(0); opacity: 1">
+            <img src="images/1.jpg" alt="avatar">
+        </div>
+        <p>flkashdfoihw efid fhaosidfhsdhfo</p>
+
+
+    </div>
+
+
+    <div class="gap" style="display:none;background-image:url(images/skills.jpg); "></div>
+    <div id="skills" style="display:none;" class="features-list">
+
+        <h2>Features</h2>
+
+        <div data-100-bottom-top="transform: translateX(-200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+            <i class="material-icons">cloud_done</i>
+            <h4>10 GB of free <b>cloud storage</b></h4>
+        </div>
+
+        <div data-100-bottom-top="transform: translateY(200px); opacity: 0" data-center-top="transform: translateY(0px); opacity: 1">
+            <i class="material-icons">public</i>
+            <h4>Servers in over <b>45 locations</b></h4>
+        </div>
+
+        <div data-100-bottom-top="transform: translateX(200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+            <i class="material-icons">security</i>
+            <h4>Guaranteed <b>data protection</b></h4>
+        </div>
+
+    </div>
+
+
+
+    <div class="gap" style="display:none;background-image:url(images/contactus.jpg);"></div>
+
+
+    <div id="contact" class="body-text content">
+
+        <h2>Body Text</h2>
+
+        <p data-100-center-top="transform: scale(0.8); opacity: 0" data-100-center-center="transform: scale(1); opacity: 1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
+        </p>
+
+    </div>
+
+    <footer>
+
+        <div>
+
+            <h3>Weili Chen</h3>
+
+            <p class="footer-links">
+                <a href="#">Intro</a>
+                ·
+                <a href="#">About Me</a>
+                ·
+        
+                <a href="#">Contact</a>
+            </p>
+
+            
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+<script src="js/skrollr.min.js"></script>
+
+<script>
+    skrollr.init();
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
+
+</body>
 </html>
