@@ -435,13 +435,13 @@ footer .footer-left{
 }
 
 footer h3{
-    color:  #5383d3;
+    color:  black;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
 
 footer .footer-links{
-    color: #95A4A9;
+    color: black;
     margin: 22px 0 14px;
     padding: 0;
 }
